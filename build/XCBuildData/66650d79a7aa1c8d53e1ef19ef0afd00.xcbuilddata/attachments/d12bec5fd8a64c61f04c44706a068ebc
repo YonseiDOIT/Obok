@@ -1,0 +1,195 @@
+{
+  "" : {
+    "const-values" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/Obok-master.swiftconstvalues",
+    "dependencies" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/Obok-master.d",
+    "diagnostics" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/Obok-master.dia",
+    "emit-module-dependencies" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/Obok-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/Obok-master-emit-module.dia",
+    "swift-dependencies" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/Obok-master.swiftdeps"
+  },
+  "/Users/mingyoung/Obok/Obok/Assistance/CustomColor.swift" : {
+    "index-unit-output-path" : "/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/CustomColor.o",
+    "llvm-bc" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/CustomColor.bc",
+    "object" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/CustomColor.o"
+  },
+  "/Users/mingyoung/Obok/Obok/ContentView.swift" : {
+    "index-unit-output-path" : "/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/ContentView.o",
+    "llvm-bc" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/ContentView.bc",
+    "object" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/ContentView.o"
+  },
+  "/Users/mingyoung/Obok/Obok/Models/Diary.swift" : {
+    "index-unit-output-path" : "/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/Diary.o",
+    "llvm-bc" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/Diary.bc",
+    "object" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/Diary.o"
+  },
+  "/Users/mingyoung/Obok/Obok/Models/Statistics.swift" : {
+    "index-unit-output-path" : "/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/Statistics.o",
+    "llvm-bc" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/Statistics.bc",
+    "object" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/Statistics.o"
+  },
+  "/Users/mingyoung/Obok/Obok/Models/User.swift" : {
+    "index-unit-output-path" : "/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/User.o",
+    "llvm-bc" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/User.bc",
+    "object" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/User.o"
+  },
+  "/Users/mingyoung/Obok/Obok/ObokApp.swift" : {
+    "index-unit-output-path" : "/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/ObokApp.o",
+    "llvm-bc" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/ObokApp.bc",
+    "object" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/ObokApp.o"
+  },
+  "/Users/mingyoung/Obok/Obok/ViewModels/AuthViewModel.swift" : {
+    "index-unit-output-path" : "/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/AuthViewModel.o",
+    "llvm-bc" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/AuthViewModel.bc",
+    "object" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/AuthViewModel.o"
+  },
+  "/Users/mingyoung/Obok/Obok/ViewModels/CalendarViewModel.swift" : {
+    "index-unit-output-path" : "/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/CalendarViewModel.o",
+    "llvm-bc" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/CalendarViewModel.bc",
+    "object" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/CalendarViewModel.o"
+  },
+  "/Users/mingyoung/Obok/Obok/ViewModels/DiaryViewModel.swift" : {
+    "index-unit-output-path" : "/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/DiaryViewModel.o",
+    "llvm-bc" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/DiaryViewModel.bc",
+    "object" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/DiaryViewModel.o"
+  },
+  "/Users/mingyoung/Obok/Obok/ViewModels/SettingsViewModel.swift" : {
+    "index-unit-output-path" : "/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/SettingsViewModel.o",
+    "llvm-bc" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/SettingsViewModel.bc",
+    "object" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/SettingsViewModel.o"
+  },
+  "/Users/mingyoung/Obok/Obok/ViewModels/StatisticsViewModel.swift" : {
+    "index-unit-output-path" : "/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/StatisticsViewModel.o",
+    "llvm-bc" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/StatisticsViewModel.bc",
+    "object" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/StatisticsViewModel.o"
+  },
+  "/Users/mingyoung/Obok/Obok/ViewModels/UserViewModel.swift" : {
+    "index-unit-output-path" : "/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/UserViewModel.o",
+    "llvm-bc" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/UserViewModel.bc",
+    "object" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/UserViewModel.o"
+  },
+  "/Users/mingyoung/Obok/Obok/Views/Authentication/LoginView.swift" : {
+    "index-unit-output-path" : "/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/LoginView.o",
+    "llvm-bc" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/LoginView.bc",
+    "object" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/LoginView.o"
+  },
+  "/Users/mingyoung/Obok/Obok/Views/Authentication/SignUpView.swift" : {
+    "index-unit-output-path" : "/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/SignUpView.o",
+    "llvm-bc" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/SignUpView.bc",
+    "object" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/SignUpView.o"
+  },
+  "/Users/mingyoung/Obok/Obok/Views/Collection/CollectionView.swift" : {
+    "index-unit-output-path" : "/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/CollectionView.o",
+    "llvm-bc" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/CollectionView.bc",
+    "object" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/CollectionView.o"
+  },
+  "/Users/mingyoung/Obok/Obok/Views/Diary/AddSubjectModal.swift" : {
+    "index-unit-output-path" : "/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/AddSubjectModal.o",
+    "llvm-bc" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/AddSubjectModal.bc",
+    "object" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/AddSubjectModal.o"
+  },
+  "/Users/mingyoung/Obok/Obok/Views/Diary/DiaryCreateFinish.swift" : {
+    "index-unit-output-path" : "/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/DiaryCreateFinish.o",
+    "llvm-bc" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/DiaryCreateFinish.bc",
+    "object" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/DiaryCreateFinish.o"
+  },
+  "/Users/mingyoung/Obok/Obok/Views/Diary/DiaryCreateView.swift" : {
+    "index-unit-output-path" : "/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/DiaryCreateView.o",
+    "llvm-bc" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/DiaryCreateView.bc",
+    "object" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/DiaryCreateView.o"
+  },
+  "/Users/mingyoung/Obok/Obok/Views/Diary/DiaryCreateView2.swift" : {
+    "index-unit-output-path" : "/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/DiaryCreateView2.o",
+    "llvm-bc" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/DiaryCreateView2.bc",
+    "object" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/DiaryCreateView2.o"
+  },
+  "/Users/mingyoung/Obok/Obok/Views/Diary/DiaryCreateView3.swift" : {
+    "index-unit-output-path" : "/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/DiaryCreateView3.o",
+    "llvm-bc" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/DiaryCreateView3.bc",
+    "object" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/DiaryCreateView3.o"
+  },
+  "/Users/mingyoung/Obok/Obok/Views/Diary/DiaryCreateView4.swift" : {
+    "index-unit-output-path" : "/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/DiaryCreateView4.o",
+    "llvm-bc" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/DiaryCreateView4.bc",
+    "object" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/DiaryCreateView4.o"
+  },
+  "/Users/mingyoung/Obok/Obok/Views/Diary/DiaryCreateView5.swift" : {
+    "index-unit-output-path" : "/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/DiaryCreateView5.o",
+    "llvm-bc" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/DiaryCreateView5.bc",
+    "object" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/DiaryCreateView5.o"
+  },
+  "/Users/mingyoung/Obok/Obok/Views/Diary/DiaryDetailView.swift" : {
+    "index-unit-output-path" : "/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/DiaryDetailView.o",
+    "llvm-bc" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/DiaryDetailView.bc",
+    "object" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/DiaryDetailView.o"
+  },
+  "/Users/mingyoung/Obok/Obok/Views/Diary/DiaryEditView.swift" : {
+    "index-unit-output-path" : "/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/DiaryEditView.o",
+    "llvm-bc" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/DiaryEditView.bc",
+    "object" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/DiaryEditView.o"
+  },
+  "/Users/mingyoung/Obok/Obok/Views/Diary/DiaryListView.swift" : {
+    "index-unit-output-path" : "/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/DiaryListView.o",
+    "llvm-bc" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/DiaryListView.bc",
+    "object" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/DiaryListView.o"
+  },
+  "/Users/mingyoung/Obok/Obok/Views/Diary/DiaryRowView.swift" : {
+    "index-unit-output-path" : "/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/DiaryRowView.o",
+    "llvm-bc" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/DiaryRowView.bc",
+    "object" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/DiaryRowView.o"
+  },
+  "/Users/mingyoung/Obok/Obok/Views/Main/CalendarView.swift" : {
+    "index-unit-output-path" : "/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/CalendarView.o",
+    "llvm-bc" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/CalendarView.bc",
+    "object" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/CalendarView.o"
+  },
+  "/Users/mingyoung/Obok/Obok/Views/Main/MainView.swift" : {
+    "index-unit-output-path" : "/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/MainView.o",
+    "llvm-bc" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/MainView.bc",
+    "object" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/MainView.o"
+  },
+  "/Users/mingyoung/Obok/Obok/Views/Settings/LoginInfoView.swift" : {
+    "index-unit-output-path" : "/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/LoginInfoView.o",
+    "llvm-bc" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/LoginInfoView.bc",
+    "object" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/LoginInfoView.o"
+  },
+  "/Users/mingyoung/Obok/Obok/Views/Settings/NoticiesView.swift" : {
+    "index-unit-output-path" : "/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/NoticiesView.o",
+    "llvm-bc" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/NoticiesView.bc",
+    "object" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/NoticiesView.o"
+  },
+  "/Users/mingyoung/Obok/Obok/Views/Settings/NotificationsView.swift" : {
+    "index-unit-output-path" : "/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/NotificationsView.o",
+    "llvm-bc" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/NotificationsView.bc",
+    "object" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/NotificationsView.o"
+  },
+  "/Users/mingyoung/Obok/Obok/Views/Settings/PolicesView.swift" : {
+    "index-unit-output-path" : "/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/PolicesView.o",
+    "llvm-bc" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/PolicesView.bc",
+    "object" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/PolicesView.o"
+  },
+  "/Users/mingyoung/Obok/Obok/Views/Settings/SettingsView.swift" : {
+    "index-unit-output-path" : "/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/SettingsView.o",
+    "llvm-bc" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/SettingsView.bc",
+    "object" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/SettingsView.o"
+  },
+  "/Users/mingyoung/Obok/Obok/Views/Settings/SubManagementView.swift" : {
+    "index-unit-output-path" : "/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/SubManagementView.o",
+    "llvm-bc" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/SubManagementView.bc",
+    "object" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/SubManagementView.o"
+  },
+  "/Users/mingyoung/Obok/Obok/Views/Statistics/StatisticsView.swift" : {
+    "index-unit-output-path" : "/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/StatisticsView.o",
+    "llvm-bc" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/StatisticsView.bc",
+    "object" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/StatisticsView.o"
+  },
+  "/Users/mingyoung/Obok/Obok/Views/Tutorial/TutorialView.swift" : {
+    "index-unit-output-path" : "/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/TutorialView.o",
+    "llvm-bc" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/TutorialView.bc",
+    "object" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/TutorialView.o"
+  },
+  "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "index-unit-output-path" : "/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/mingyoung/Obok/build/Obok.build/Release-iphoneos/Obok.build/Objects-normal/arm64/GeneratedAssetSymbols.o"
+  }
+}

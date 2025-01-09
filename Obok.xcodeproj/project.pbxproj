@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		28CC52A73EDB8E8CABD4601B /* Pods_ObokUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63D482FE47CA811B0C0ED9CF /* Pods_ObokUITests.framework */; };
+		F51B3C0D2448D5F929C5A861 /* Pods_ObokTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA83A3D086A4ED8ABDFBC0C /* Pods_ObokTests.framework */; };
+		F9C284AEEFA7DDCF0ACF5E5E /* Pods_Obok.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31746BA50B820648B13489DD /* Pods_Obok.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		CCA9C3E02CF20C1F00E05F6B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,9 +30,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		31746BA50B820648B13489DD /* Pods_Obok.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Obok.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		34A3F112616B575CAD397F5F /* Pods-ObokUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObokUITests.debug.xcconfig"; path = "Target Support Files/Pods-ObokUITests/Pods-ObokUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3BA83A3D086A4ED8ABDFBC0C /* Pods_ObokTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ObokTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4439F5513260DBC7EEC0091C /* Pods-ObokUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObokUITests.release.xcconfig"; path = "Target Support Files/Pods-ObokUITests/Pods-ObokUITests.release.xcconfig"; sourceTree = "<group>"; };
+		63D482FE47CA811B0C0ED9CF /* Pods_ObokUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ObokUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AF4CF08A4DFBFE0E9763B77 /* Pods-Obok.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Obok.debug.xcconfig"; path = "Target Support Files/Pods-Obok/Pods-Obok.debug.xcconfig"; sourceTree = "<group>"; };
+		9898F635347EAEF451CE0D5D /* Pods-Obok.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Obok.release.xcconfig"; path = "Target Support Files/Pods-Obok/Pods-Obok.release.xcconfig"; sourceTree = "<group>"; };
 		CCA9C3CF2CF20C1E00E05F6B /* Obok.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Obok.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCA9C3DF2CF20C1F00E05F6B /* ObokTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObokTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCA9C3E92CF20C1F00E05F6B /* ObokUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObokUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB698E78F1E418E9E7EAE687 /* Pods-ObokTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObokTests.debug.xcconfig"; path = "Target Support Files/Pods-ObokTests/Pods-ObokTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E91CC6325D43C9E0B480D71C /* Pods-ObokTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObokTests.release.xcconfig"; path = "Target Support Files/Pods-ObokTests/Pods-ObokTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -42,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9C284AEEFA7DDCF0ACF5E5E /* Pods_Obok.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F51B3C0D2448D5F929C5A861 /* Pods_ObokTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,17 +73,43 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28CC52A73EDB8E8CABD4601B /* Pods_ObokUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C4F7C48B082C13B26A67735 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				31746BA50B820648B13489DD /* Pods_Obok.framework */,
+				3BA83A3D086A4ED8ABDFBC0C /* Pods_ObokTests.framework */,
+				63D482FE47CA811B0C0ED9CF /* Pods_ObokUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		456790CAFA83009FA581A346 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6AF4CF08A4DFBFE0E9763B77 /* Pods-Obok.debug.xcconfig */,
+				9898F635347EAEF451CE0D5D /* Pods-Obok.release.xcconfig */,
+				DB698E78F1E418E9E7EAE687 /* Pods-ObokTests.debug.xcconfig */,
+				E91CC6325D43C9E0B480D71C /* Pods-ObokTests.release.xcconfig */,
+				34A3F112616B575CAD397F5F /* Pods-ObokUITests.debug.xcconfig */,
+				4439F5513260DBC7EEC0091C /* Pods-ObokUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CCA9C3C62CF20C1E00E05F6B = {
 			isa = PBXGroup;
 			children = (
 				CCA9C3D12CF20C1E00E05F6B /* Obok */,
 				CCA9C3D02CF20C1E00E05F6B /* Products */,
+				456790CAFA83009FA581A346 /* Pods */,
+				3C4F7C48B082C13B26A67735 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,9 +130,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CCA9C3F32CF20C1F00E05F6B /* Build configuration list for PBXNativeTarget "Obok" */;
 			buildPhases = (
+				00DC63AAC10E657FB7A465A7 /* [CP] Check Pods Manifest.lock */,
 				CCA9C3CB2CF20C1E00E05F6B /* Sources */,
 				CCA9C3CC2CF20C1E00E05F6B /* Frameworks */,
 				CCA9C3CD2CF20C1E00E05F6B /* Resources */,
+				631B9F885E79A3427FC60403 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -99,8 +144,6 @@
 				CCA9C3D12CF20C1E00E05F6B /* Obok */,
 			);
 			name = Obok;
-			packageProductDependencies = (
-			);
 			productName = Obok;
 			productReference = CCA9C3CF2CF20C1E00E05F6B /* Obok.app */;
 			productType = "com.apple.product-type.application";
@@ -109,6 +152,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CCA9C3F62CF20C1F00E05F6B /* Build configuration list for PBXNativeTarget "ObokTests" */;
 			buildPhases = (
+				F8DDC94F31EAD7C3F6E721DC /* [CP] Check Pods Manifest.lock */,
 				CCA9C3DB2CF20C1F00E05F6B /* Sources */,
 				CCA9C3DC2CF20C1F00E05F6B /* Frameworks */,
 				CCA9C3DD2CF20C1F00E05F6B /* Resources */,
@@ -119,8 +163,6 @@
 				CCA9C3E12CF20C1F00E05F6B /* PBXTargetDependency */,
 			);
 			name = ObokTests;
-			packageProductDependencies = (
-			);
 			productName = ObokTests;
 			productReference = CCA9C3DF2CF20C1F00E05F6B /* ObokTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -129,6 +171,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CCA9C3F92CF20C1F00E05F6B /* Build configuration list for PBXNativeTarget "ObokUITests" */;
 			buildPhases = (
+				D586E8DACDBC97E2159393B5 /* [CP] Check Pods Manifest.lock */,
 				CCA9C3E52CF20C1F00E05F6B /* Sources */,
 				CCA9C3E62CF20C1F00E05F6B /* Frameworks */,
 				CCA9C3E72CF20C1F00E05F6B /* Resources */,
@@ -139,8 +182,6 @@
 				CCA9C3EB2CF20C1F00E05F6B /* PBXTargetDependency */,
 			);
 			name = ObokUITests;
-			packageProductDependencies = (
-			);
 			productName = ObokUITests;
 			productReference = CCA9C3E92CF20C1F00E05F6B /* ObokUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -212,6 +253,92 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00DC63AAC10E657FB7A465A7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Obok-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		631B9F885E79A3427FC60403 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Obok/Pods-Obok-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Obok/Pods-Obok-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Obok/Pods-Obok-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D586E8DACDBC97E2159393B5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ObokUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8DDC94F31EAD7C3F6E721DC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ObokTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CCA9C3CB2CF20C1E00E05F6B /* Sources */ = {
@@ -372,12 +499,14 @@
 		};
 		CCA9C3F42CF20C1F00E05F6B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AF4CF08A4DFBFE0E9763B77 /* Pods-Obok.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Obok/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -400,12 +529,14 @@
 		};
 		CCA9C3F52CF20C1F00E05F6B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9898F635347EAEF451CE0D5D /* Pods-Obok.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Obok/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -428,6 +559,7 @@
 		};
 		CCA9C3F72CF20C1F00E05F6B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB698E78F1E418E9E7EAE687 /* Pods-ObokTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -446,6 +578,7 @@
 		};
 		CCA9C3F82CF20C1F00E05F6B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E91CC6325D43C9E0B480D71C /* Pods-ObokTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -464,6 +597,7 @@
 		};
 		CCA9C3FA2CF20C1F00E05F6B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34A3F112616B575CAD397F5F /* Pods-ObokUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -480,6 +614,7 @@
 		};
 		CCA9C3FB2CF20C1F00E05F6B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4439F5513260DBC7EEC0091C /* Pods-ObokUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
