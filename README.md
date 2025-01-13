@@ -14,7 +14,6 @@ Figma : https://www.figma.com/design/RerSyT9vI1v3l1H0NwE0JB/DOIT2%EA%B8%B0_%EB%8
 - 📚 FrontEnd
 ###
 ![Swift](https://img.shields.io/badge/Swift-F05138.svg?&style=for-the-badge&logo=swift&logoColor=white)
-//본인 작성 툴 적어두면 내가 추가할게
 
 ##
 - 📚 BackEnd
