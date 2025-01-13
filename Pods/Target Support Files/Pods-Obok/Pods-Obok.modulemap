@@ -1,6 +1,0 @@
-framework module Pods_Obok {
-  umbrella header "Pods-Obok-umbrella.h"
-
-  export *
-  module * { export * }
-}

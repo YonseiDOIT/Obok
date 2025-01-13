@@ -1,6 +1,0 @@
-framework module Pods_ObokUITests {
-  umbrella header "Pods-ObokUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}
