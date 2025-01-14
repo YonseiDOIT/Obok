@@ -14,9 +14,11 @@ struct DiaryCreateView2: View {
     @State private var currentPage = 2
     private let totalPages = 5
     @State private var understand: String = ""
+    @State private var selectedPercent: String? = nil // 선택된 퍼센트를 저장
     @State private var selectedTag: String? = nil // 선택된 태그를 저장
     @State private var selectedFeeling: String? = nil // 선택된 기분을 저장
 
+    let percent = ["모르겠어요20%", "아쉽게도40%", "어느 정도60%", "충분히80%", "아주 잘100%"]
     let tags = ["#가볍게", "#적당히", "#보통", "#열심히"] // 태그 목록
     let feelings = [
         ("힘들었어요", "Bad"),
@@ -73,28 +75,58 @@ struct DiaryCreateView2: View {
 
                 // 페이지 입력 영역
                 HStack {
-                    Text("오늘 공부는")
-                        .font(.system(size: 15))
+                    Text("오늘 공부하며 이만큼 이해했어요")
+                        .font(.system(size: 16))
                         .fontWeight(.bold)
                         .foregroundColor(.black)
-                    RoundedRectangle(cornerRadius: 10)
-                        .stroke(Color.gray.opacity(0.5), lineWidth: 1)
-                        .frame(width: 70, height: 25)
-                        .overlay(
-                            TextField("", text: $understand)
-                                .keyboardType(.numberPad)
-                                .multilineTextAlignment(.center)
-                                .font(.system(size: 16))
-                        )
-                    Text("% 잘 이해했다고 생각해요")
-                        .font(.system(size: 15))
-                        .fontWeight(.bold)
-                        .foregroundColor(.black)
+                        .padding()
+                }
+                // 퍼센트 버튼
+                VStack(spacing: 12) {
+                    // 첫 번째 줄: 2개의 버튼
+                    HStack(spacing: 11) {
+                        ForEach(percent.prefix(2), id: \.self) { tag in
+                            Button(action: {
+                                selectedPercent = tag
+                            }) {
+                                Text(tag)
+                                    .font(.system(size: 14))
+                                    .foregroundColor(selectedPercent == tag ? CustomColor.colors.first! : .black)
+                                    .padding(.vertical, 5)
+                                    .padding(.horizontal, 13)
+                                    .overlay(
+                                        RoundedRectangle(cornerRadius: 10)
+                                            .stroke(selectedPercent == tag ? CustomColor.colors.first! : Color.gray, lineWidth: 1.5)
+                                    )
+                            }
+                        }
+                        Spacer()
+                    }
+                    
+                    // 두 번째 줄: 3개의 버튼
+                    HStack(spacing: 11) {
+                        ForEach(percent.suffix(3), id: \.self) { tag in
+                            Button(action: {
+                                selectedPercent = tag
+                            }) {
+                                Text(tag)
+                                    .font(.system(size: 14))
+                                    .foregroundColor(selectedPercent == tag ? CustomColor.colors.first! : .black)
+                                    .padding(.vertical, 5)
+                                    .padding(.horizontal, 13)
+                                    .overlay(
+                                        RoundedRectangle(cornerRadius: 10)
+                                            .stroke(selectedPercent == tag ? CustomColor.colors.first! : Color.gray, lineWidth: 1.5)
+                                    )
+                            }
+                        }
+                        Spacer()
+                    }
                 }
                 .padding(.horizontal, 25)
                 .padding(.bottom, 50)
 
-                // 태그 선택 영역
+                // 이런 마음으로 공부했어요 영역
                 VStack(alignment: .leading) {
                     Text("이런 마음으로 공부했어요")
                         .font(.system(size: 16))
@@ -104,26 +136,24 @@ struct DiaryCreateView2: View {
                         .padding(.bottom, 8)
                     
                     // 태그 버튼
-                    ScrollView(.horizontal, showsIndicators: false) {
-                        HStack(spacing: 12) {
-                            ForEach(tags, id: \.self) { tag in
-                                Button(action: {
-                                    selectedTag = tag // 태그 선택
-                                }) {
-                                    Text(tag)
-                                        .font(.system(size: 14))
-                                        .foregroundColor(selectedTag == tag ? CustomColor.colors.first! : .black)
-                                        .padding(.vertical, 5)
-                                        .padding(.horizontal, 13)
-                                        .overlay(
-                                            RoundedRectangle(cornerRadius: 10)
-                                                .stroke(selectedTag == tag ? CustomColor.colors.first! : Color.gray, lineWidth: 1.5)
-                                        )
-                                }
+                    HStack(spacing: 12) {
+                        ForEach(tags, id: \.self) { tag in
+                            Button(action: {
+                                selectedTag = tag // 태그 선택
+                            }) {
+                                Text(tag)
+                                    .font(.system(size: 14))
+                                    .foregroundColor(selectedTag == tag ? CustomColor.colors.first! : .black)
+                                    .padding(.vertical, 5)
+                                    .padding(.horizontal, 13)
+                                    .overlay(
+                                        RoundedRectangle(cornerRadius: 10)
+                                            .stroke(selectedTag == tag ? CustomColor.colors.first! : Color.gray, lineWidth: 1.5)
+                                    )
                             }
                         }
-                        .padding(.horizontal, 25)
                     }
+                    .padding(.horizontal, 25)
                 }
                 .padding(.bottom, 40)
 
