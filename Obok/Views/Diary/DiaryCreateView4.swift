@@ -12,25 +12,22 @@ struct DiaryCreateView4: View {
     @State private var currentPage = 4
     private let totalPages = 5
     @State private var explain2: String = ""
-    private let maxTextLength = 150 // 글자 수 제한
-    @State private var selectedTags: [String] = [] // 선택된 태그를 저장 (복수 선택)
+    private let maxTextLength = 150
+    @State private var selectedTags: [String] = []
 
-    let dissTags = ["#해당없음", "#수면부족", "#미루는습관", "#집중력부족", "#체력부족", "#스트레스", "#무기력", "#개념부족", " #이해안됨", "#응용력부족", "#암기어려움", "#풀이어려움", "#소음", "#공부공간부족", "#휴대폰", "#인터넷게임", "#인간관계", "#부담감"] // 태그 목록
-    
-    // 태그 열
-        private let gridColumns = [
-            GridItem(.flexible()),
-            GridItem(.flexible()),
-            GridItem(.flexible())
-        ]
-    
+    let categories: [String: [String]] = [
+        "개인 습관 및 상태": ["#수면 부족", "#미루기", "#집중력 부족", "#체력 부족", "#스트레스", "#무기력", "#부담"],
+        "학습 내용 및 능력": ["#이해 안 됨", "#개념 부족", "#응용력 부족", "#암기 어려움", "#풀이 어려움"],
+        "외부 환경 요인": ["#소음", "#공간 부족", "#전자기기", "#게임", "#인간관계"]
+    ]
+
     var body: some View {
         ZStack {
             VStack(alignment: .leading) {
                 // 상단 네비게이션 영역
                 HStack {
                     Button(action: {
-                        presentationMode.wrappedValue.dismiss() // 이전 화면으로 돌아가기
+                        presentationMode.wrappedValue.dismiss()
                     }) {
                         Image("backbutton")
                             .resizable()
@@ -61,24 +58,21 @@ struct DiaryCreateView4: View {
                         .frame(height: 10)
 
                     RoundedRectangle(cornerRadius: 8)
-                        .fill(CustomColor.colors.first!) // 진행중인 부분 색상
+                        .fill(CustomColor.colors.first!)
                         .frame(width: CGFloat(currentPage) / CGFloat(totalPages) * (UIScreen.main.bounds.width - 48), height: 10)
                 }
                 .padding(.horizontal, 24)
                 .padding(.top, 11)
 
                 Spacer().frame(height: 40)
-                
-                // 공부 내용 작성 영역
+
                 VStack(alignment: .leading) {
                     HStack {
-
-                    Text("공부하면서 아쉬웠던 점은...")
-                        .font(.system(size: 18))
-                        .fontWeight(.bold)
-                        .foregroundColor(.black)
-                    
-                    // 글자 수 제한 표시
+                        Text("공부하면서 아쉬웠던 점은...")
+                            .font(.system(size: 18))
+                            .fontWeight(.bold)
+                            .foregroundColor(.black)
+                        
                         Spacer()
                         Text("\(explain2.count) / \(maxTextLength)")
                             .font(.system(size: 14))
@@ -97,72 +91,86 @@ struct DiaryCreateView4: View {
                                     explain2 = String(newValue.prefix(maxTextLength))
                                 }
                             }
-                            .padding(EdgeInsets(top: 10, leading: 20, bottom: 10, trailing: 10))
-                            .font(.system(size: 15, weight: .regular))
-                            .lineSpacing(12) // 160%보다 작게
-//                            .lineSpacing(24) // 15px * 160% = 24px
+                            .padding(.all, 10)
+                            .font(.system(size: 15))
                             .foregroundColor(.black)
                             .background(Color.clear)
-                            .frame(maxWidth: .infinity, maxHeight: 140) // 텍스트 크기 제한
-                            .clipped() // 텍스트가 박스 밖으로 넘어가지 않도록 자르기
+                            .frame(maxWidth: .infinity, maxHeight: 140)
+                            .clipped()
                     }
                 }
                 .padding(.horizontal, 25)
-                .padding(.bottom, 50)
-
-                // 태그 선택 영역
-                VStack(alignment: .leading) {
-                    HStack {
-                        Text("이런 이유 때문에 아쉬웠어요.")
-                            .font(.system(size: 16))
-                            .fontWeight(.bold)
-                            .foregroundColor(.black)
-                        Spacer()
-                        Text("복수선택")
-                            .font(.system(size: 13))
-                            .foregroundColor(.gray)
-                    }
-                    .padding(.horizontal, 25)
-                    .padding(.bottom, 8)
-                    
-                    // 모든 태그 버튼 표시
-                    LazyVGrid(columns: gridColumns, spacing: 12) {
-                        ForEach(dissTags, id: \.self) { tag in
+                .padding(.bottom, 30)
+                
+                    Text("이런 이유 때문에 아쉬웠어요.")
+                        .font(.system(size: 16))
+                        .fontWeight(.bold)
+                        .foregroundColor(.black)
+                        .padding(.horizontal, 18)
+                        .padding(.bottom, 8)
+                
+                ScrollView{
+                    // "해당 없음" 태그
+                    VStack(alignment: .leading) {
+                        LazyVGrid(columns: [GridItem(.flexible())], spacing: 12) {
                             Button(action: {
-                                if tag == "#해당없음" {
-                                    // '해당 없음' 선택 시 다른 태그 초기화
-                                    if selectedTags.contains("#해당없음") {
-                                        selectedTags.removeAll()
-                                    } else {
-                                        selectedTags = ["#해당없음"]
-                                    }
+                                if selectedTags.contains("#해당없음") {
+                                    selectedTags.removeAll()
                                 } else {
-                                    // 다른 태그 선택 시 '해당없음' 제거
-                                    selectedTags.removeAll { $0 == "#해당없음" }
-                                    if selectedTags.contains(tag) {
-                                        selectedTags.removeAll { $0 == tag }
-                                    } else {
-                                        selectedTags.append(tag)
-                                    }
+                                    selectedTags = ["#해당없음"]
                                 }
                             }) {
-                                Text(tag)
+                                Text("#해당없음")
                                     .font(.system(size: 14))
-                                    .foregroundColor(.black)
+                                    .foregroundColor(selectedTags.contains("#해당없음") ? CustomColor.colors.first! : .black)
                                     .padding(.vertical, 8)
                                     .padding(.horizontal, 12)
                                     .background(
                                         RoundedRectangle(cornerRadius: 10)
-                                            .stroke(selectedTags.contains(tag) ? CustomColor.colors.first! : Color.gray.opacity(0.2))
-
+                                            .stroke(selectedTags.contains("#해당없음") ? CustomColor.colors.first! : Color.gray.opacity(0.2))
                                     )
                             }
                         }
+                        .padding(.horizontal, 18)
+                        .padding(.bottom, 20)
                     }
-                    .padding(.horizontal, 25)
-                    .padding(.bottom, 40)
+                    
+                    // 태그 선택 영역
+                    VStack(alignment: .leading) {
+                        ForEach(categories.keys.sorted(), id: \.self) { category in
+                            Text(category)
+                                .font(.system(size: 14))
+                                .foregroundColor(.gray)
+                                .padding(.horizontal, 20)
+                                .padding(.bottom, -2)
+                            
+                            LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())], spacing: 12) {
+                                ForEach(categories[category]!, id: \.self) { tag in
+                                    Button(action: {
+                                        if selectedTags.contains(tag) {
+                                            selectedTags.removeAll { $0 == tag }
+                                        } else {
+                                            selectedTags.removeAll { $0 == "#해당없음" }
+                                            selectedTags.append(tag)
+                                        }
+                                    }) {
+                                        Text(tag)
+                                            .font(.system(size: 14))
+                                            .foregroundColor(selectedTags.contains(tag) ? CustomColor.colors.first! : .black)
+                                            .padding(.vertical, 8)
+                                            .padding(.horizontal, 12)
+                                            .background(
+                                                RoundedRectangle(cornerRadius: 10)
+                                                    .stroke(selectedTags.contains(tag) ? CustomColor.colors.first! : Color.gray.opacity(0.2))
+                                            )
+                                    }
+                                }
+                            }
+                            .padding(.horizontal, 25)
+                            .padding(.bottom, 10)
+                        }
+                    }
                 }
-
                 // 다음으로 버튼
                 NavigationLink(destination: DiaryCreateView5()) {
                     Text("다음으로")
