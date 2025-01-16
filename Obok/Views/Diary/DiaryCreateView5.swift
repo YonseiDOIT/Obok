@@ -15,7 +15,7 @@ struct DiaryCreateView5: View {
     private let maxTextLength = 150 // 글자 수 제한
     @State private var selectedTags: [String] = [] // 선택된 태그를 저장 (복수 선택)
 
-    let dissTags = ["#상세한 계획 세우기", "#자신감", "#인간관계", "#수면부족", "#미루는 습관", "#부담감", "#스트레스"] // 태그 목록
+    let dissTags = ["#구체적인 계획","#작은 목표부터", "#자신감 키우기", "#긍정적인 생각", "#미루지 않기", "#스트레칭", "#휴대폰 줄이기", "# 일찍 자기"] // 태그 목록
     
     // 태그 열
         private let gridColumns = [
@@ -130,7 +130,6 @@ struct DiaryCreateView5: View {
                                     .background(
                                         RoundedRectangle(cornerRadius: 10)
                                             .stroke(selectedTags.contains(tag) ? CustomColor.colors.first! : Color.gray.opacity(0.2))
-
                                     )
                             }
                         }
@@ -138,6 +137,33 @@ struct DiaryCreateView5: View {
                     .padding(.horizontal, 25)
                     .padding(.bottom, 220)
                 }
+                
+                VStack() {
+                    Text("Tip!")
+                        .font(.system(size: 14))
+                        .fontWeight(.bold)
+                        .padding(EdgeInsets(top: 3, leading: 10, bottom: 3, trailing: 10))
+                        .background(
+                            RoundedRectangle(cornerRadius: 15)
+                                .fill(Color.white)
+                                .stroke(Color.black)
+                        )
+                        .padding(.leading, -125)
+                    
+                    Text("다짐은 구체적일수록 좋아요!")
+                        .font(.system(size: 16))
+                        .fontWeight(.semibold)
+                        .foregroundColor(.black)
+                        .padding(.leading, -65)
+                        .padding(.bottom, 1)
+
+                    Text("SNS를 너무 많이 해서 고민이라면,\n‘SNS 10분만 줄여봐야겠다’처럼 적어보세요!")
+                        .font(.system(size: 14))
+                        .foregroundColor(.gray)
+                }
+                .padding(.horizontal, 25)
+                .padding(.bottom, 10)
+                .padding(.top, -120)
 
                 // 등록하기 버튼
                 NavigationLink(destination: DiaryCreateFinish()) {
