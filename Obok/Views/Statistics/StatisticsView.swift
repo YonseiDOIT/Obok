@@ -10,10 +10,16 @@ import SwiftUI
 struct StatisticsView: View {
     @Environment(\.presentationMode) var presentationMode
    
-    // 현재 연도 가져오기
+    // 현재 연도 및 월 가져오기
     private var currentYear: String {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy년"
+        return dateFormatter.string(from: Date())
+    }
+    
+    private var currentMonth: String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "M월"
         return dateFormatter.string(from: Date())
     }
     
@@ -49,6 +55,38 @@ struct StatisticsView: View {
                         .fontWeight(.bold)
                 }
                 .padding([.top, .horizontal], 24)
+                
+                // 월 이동
+                HStack {
+                    Button(action: {
+                        // 이전 월로 이동
+                    }) {
+                        Image("arrowLeft")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 16, height: 16)
+                    }
+                    
+                    Spacer()
+                    
+                    Text("\(currentYear) \(currentMonth)")
+                        .font(.system(size: 18))
+                        .fontWeight(.bold)
+                        .foregroundColor(.black)
+                    
+                    Spacer()
+                    
+                    Button(action: {
+                        // 다음 월로 이동
+                    }) {
+                        Image("arrowRight")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 16, height: 16)
+                    }
+                }
+                .padding(.horizontal, 24)
+                .padding(.top, 12)
                 
                 Divider()
                 
