@@ -100,32 +100,7 @@ struct StatisticsView: View {
                     }
                     .padding()
                     
-                    // n번의 기록
-                    ZStack{
-                        RoundedRectangle(cornerRadius: 20)
-                            .fill(Color.white)
-                            .stroke(Color.gray, lineWidth: 1)
-                            .frame(height: 70)
-                            .offset(y: 23) // 이미지 아래로 배치
-                        
-                        Image("writeNum")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 300, height: 200)
-                            .offset(y: -31)
-                        
-                        Text("n번의 기록에서")
-                            .font(.system(size: 28))
-                            .fontWeight(.bold)
-                            .foregroundColor(.black)
-                            .offset(y: 22)
-                    }
-                    .padding(.horizontal, 24)
-
-                    Rectangle()
-                        .fill(Color.gray)
-                        .frame(height: 4)
-                        .padding(.top, -40)
+                    // 이미지/ 텍스트 교체 필요
                     
                     // 과목 개수 순위
                     HStack{
