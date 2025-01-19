@@ -23,8 +23,9 @@ struct StatisticsView: View {
         return dateFormatter.string(from: Date())
     }
     
-    // 기록 횟수
+    // 받아올 더미 데이터
     private var recordCount: Int = 10
+    private var shame: String = "dummy"
     
     var body: some View {
         ZStack {
@@ -105,7 +106,7 @@ struct StatisticsView: View {
                                 .font(.system(size: 16, weight: .medium))
                                 .foregroundColor(.black)
                                 .padding(.top, 120)
-
+                            
                             HStack(spacing: 4) {
                                 Text("✨ \(recordCount)번의 기록 달성 ✨")
                                     .font(.system(size: 24, weight: .bold))
@@ -114,147 +115,28 @@ struct StatisticsView: View {
                             }
                         }
                         Spacer()
-                    }
-                    
-                    // 과목 개수 순위
-                    HStack{
-                        Image("mostStudy")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 170)
+                        
                         VStack{
-                            VStack{
-                                Text("가장 자주 공부한 과목")
-                                    .font(.system(size: 20))
-                                    .fontWeight(.bold)
+                            Image("keyword")
+                                .resizable()
+                                .scaledToFit()
+                                .padding(.leading, 120)
+                                .padding(.trailing, 120)
+                            
+                            Text("분아별 공부의 걸림돌")
+                                .font(.system(size: 16, weight: .medium))
+                                .foregroundColor(.black)
+                                .padding(.top, 5)
+                            
+                            HStack(spacing: 4) {
+                                Text("✨ 아쉬웠던 #\(shame) ✨")
+                                    .font(.system(size: 24, weight: .bold))
                                     .foregroundColor(.black)
-                                    .padding(.bottom, -10)
-                                
-                                HStack{
-                                    Text("국어")
-                                        .font(.system(size: 40))
-                                        .fontWeight(.bold)
-                                        .foregroundColor(.black)
-                                    
-                                    Text("# n회")
-                                        .font(.system(size: 20))
-                                        .fontWeight(.bold)
-                                        .foregroundColor(.black)
-                                        .padding(.top, 20)
-                                        .padding(.leading, 20)
-                                }
+                                    .padding(.top, -5)
                             }
                         }
+                        Spacer()
                     }
-                    .padding(.bottom, 10)
-                    .padding(.top, -20)
-                    
-                    // 아쉬운 점에 대한 원인
-                    Text("공부 방해 요인")
-                        .font(.system(size: 18))
-                        .fontWeight(.bold)
-                        .foregroundColor(.black)
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                        .padding(.leading, 24)
-                    
-                    HStack{
-                        Text("#키워드")
-                            .font(.system(size: 18))
-                            .fontWeight(.bold)
-                            .foregroundColor(.red)
-                            .padding(.leading, 24)
-                            .padding(.top, -3)
-                        
-                        Text("가 가장 많았어요")
-                            .font(.system(size: 18))
-                            .fontWeight(.bold)
-                            .foregroundColor(.black)
-                            .padding(.top, -3)
-                    }
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    
-                    Rectangle()
-                        .fill(Color.gray)
-                        .frame(height: 4)
-                        .padding(.top, 5)
-                    
-                    VStack{
-                        Text("이번 달에 이해가 잘 된 과목이예요")
-                            .font(.system(size: 18))
-                            .fontWeight(.bold)
-                            .foregroundColor(.black)
-                            .frame(maxWidth: .infinity, alignment: .leading)
-                            .padding(.leading, 24)
-                            .padding(.top, 10)
-                        HStack{
-                            HStack{
-                                Image("1st")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 80, height: 80)
-                                    .padding(.leading, -24)
-                                VStack{
-                                    Text("n%")
-                                        .font(.system(size: 20))
-                                        .fontWeight(.bold)
-                                        .foregroundColor(.black)
-                                        .padding(.top, -3)
-                                    
-                                    Text("국어")
-                                        .font(.system(size: 30))
-                                        .fontWeight(.bold)
-                                        .foregroundColor(.black)
-                                        .padding(.top, -3)
-                                }
-                            }
-                            
-                            HStack{
-                                Image("2nd")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 50, height: 50)
-                                VStack{
-                                    Text("n%")
-                                        .font(.system(size: 20))
-                                        .fontWeight(.bold)
-                                        .foregroundColor(.black)
-                                        .padding(.top, -3)
-
-                                    Text("국어")
-                                        .font(.system(size: 20))
-                                        .fontWeight(.bold)
-                                        .foregroundColor(.black)
-                                        .padding(.top, -3)
-                                }
-                            }
-                            
-                            HStack{
-                                Image("3rd")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 50, height: 50)
-                                VStack{
-                                    Text("n%")
-                                        .font(.system(size: 20))
-                                        .fontWeight(.bold)
-                                        .foregroundColor(.black)
-                                        .padding(.top, -3)
-
-                                    Text("국어")
-                                        .font(.system(size: 20))
-                                        .fontWeight(.bold)
-                                        .foregroundColor(.black)
-                                        .padding(.top, -3)
-                                }
-                            }
-                        }
-                        
-                        Rectangle()
-                            .fill(Color.gray)
-                            .frame(height: 4)
-                            .padding(.top, 5)
-                    }
-                        
                 }
             }
             
