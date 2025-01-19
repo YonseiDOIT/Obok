@@ -23,6 +23,9 @@ struct StatisticsView: View {
         return dateFormatter.string(from: Date())
     }
     
+    // 기록 횟수
+    private var recordCount: Int = 10
+    
     var body: some View {
         ZStack {
             VStack(alignment: .leading) {
@@ -91,16 +94,27 @@ struct StatisticsView: View {
                 Divider()
                 
                 ScrollView {
-                    HStack{
-                        Text("오복과 함께한 n월")
-                            .font(.system(size: 18))
-                            .fontWeight(.bold)
-                            .foregroundColor(.black)
-                            .frame(maxWidth: .infinity, alignment: .leading)
+                    VStack{
+                        ZStack{
+                            Image("writtenNum")
+                                .resizable()
+                                .scaledToFit()
+                                .padding()
+                            
+                            Text("오복과 함께한 \(currentMonth)")
+                                .font(.system(size: 16, weight: .medium))
+                                .foregroundColor(.black)
+                                .padding(.top, 120)
+
+                            HStack(spacing: 4) {
+                                Text("✨ \(recordCount)번의 기록 달성 ✨")
+                                    .font(.system(size: 24, weight: .bold))
+                                    .foregroundColor(.black)
+                                    .padding(.top, 170)
+                            }
+                        }
+                        Spacer()
                     }
-                    .padding()
-                    
-                    // 이미지/ 텍스트 교체 필요
                     
                     // 과목 개수 순위
                     HStack{
