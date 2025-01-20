@@ -27,10 +27,10 @@ struct CalendarView: View {
                             .frame(width: 24, height: 24)
                     }
                     .fullScreenCover(isPresented: $showSettings) {
-                                            NavigationView { // 내부에 NavigationView 추가
-                                                SettingsView()
-                                            }
-                                        }
+                        NavigationView { // 내부에 NavigationView 추가
+                            SettingsView()
+                        }
+                    }
                     Spacer()
 
                     HStack(spacing: 16) {

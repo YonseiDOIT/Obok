@@ -95,7 +95,7 @@ struct StatisticsView: View {
                 Divider()
                 
                 ScrollView {
-                    VStack{
+                    VStack(alignment: .leading) {
                         ZStack{
                             Image("writtenNum")
                                 .resizable()
@@ -135,7 +135,12 @@ struct StatisticsView: View {
                                     .padding(.top, -5)
                             }
                         }
-                        Spacer()
+                        padding(.bottom, 30)
+                        
+                        Text("공부를 하면서")
+                            .font(.system(size: 15, weight: .medium))
+                            .padding(.leading, 24)
+                        
                     }
                 }
             }
