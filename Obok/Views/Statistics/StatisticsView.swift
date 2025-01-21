@@ -141,6 +141,26 @@ struct StatisticsView: View {
                             .font(.system(size: 15, weight: .medium))
                             .padding(.leading, 24)
                         
+                        Text("개인 습관 및 상태")
+                            .font(.system(size: 15, weight: .medium))
+                            .padding(.leading, 24)
+                        Text("나의 주된 문제점은 #\(shame) (이)었어요.")
+                            .font(.system(size: 15, weight: .medium))
+                            .padding(.leading, 24)
+                        
+                        Text("학습 내용 및 능력")
+                            .font(.system(size: 15, weight: .medium))
+                            .padding(.leading, 24)
+                        Text("주로 #\(shame) 때문에 힘들었어요.")
+                            .font(.system(size: 15, weight: .medium))
+                            .padding(.leading, 24)
+                        
+                        Text("외부 환경 요인")
+                            .font(.system(size: 15, weight: .medium))
+                            .padding(.leading, 24)
+                        Text("#\(shame) 의 방해를 많이 받았어요.")
+                            .font(.system(size: 15, weight: .medium))
+                            .padding(.leading, 24)
                     }
                 }
             }
