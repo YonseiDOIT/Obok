@@ -161,6 +161,12 @@ struct StatisticsView: View {
                         Text("#\(shame) 의 방해를 많이 받았어요.")
                             .font(.system(size: 15, weight: .medium))
                             .padding(.leading, 24)
+                            .padding(.bottom, 40)
+                        
+                        RoundedRectangle(cornerSize: 10)
+                        Text("부족한 부분을 점검하고 효율적인 공부 방법을 찾아보세요!")
+                            .font(.system(size: 15, weight: .medium))
+                            .padding(.leading, 24)
                     }
                 }
             }
