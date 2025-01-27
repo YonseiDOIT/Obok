@@ -12,6 +12,7 @@ struct CalendarView: View {
     @State private var weekDates: [Date] = [] // 현재 주차 날짜들
     @State private var studyData: [Date: [Color]] = [:] // 날짜별 과목 색상
     @State private var showSettings: Bool = false // 설정 화면 표시 여부
+    @State private var navigateToStatistics: Bool = false
 
     var body: some View {
         NavigationView {
@@ -34,13 +35,18 @@ struct CalendarView: View {
                     Spacer()
 
                     HStack(spacing: 16) {
-                        Button(action: {
-                            print("통계 버튼 클릭")
-                        }) {
-                            Image("statistics")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 75, height: 24)
+                        NavigationLink(
+                            destination: StatisticsView()
+//                            isActive: $navigateToStatistics
+                        ) {
+                            Button(action: {
+                                navigateToStatistics = true // 통계 화면으로 이동
+                            }) {
+                                Image("statistics")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 75, height: 24)
+                            }
                         }
 
                         Button(action: {
@@ -147,6 +153,11 @@ struct CalendarView: View {
                 loadWeekDates()
                 loadStudyData() // 초기 데이터 로드
             }
+            .navigationDestination(for: String.self) { value in
+                if value == "StatisticsView" {
+                    StatisticsView()
+                }
+            }
             .navigationBarHidden(true) // 상단 기본 네비게이션 바 숨기기
             .background(Color.white)
         }
@@ -228,3 +239,11 @@ struct CalendarView: View {
         }
     }
 }
+
+//struct CalendarView_Previews: PreviewProvider {
+//    @State static var previewDate = Date()
+//
+//    static var previews: some View {
+//        CalendarView(selectedDate: $previewDate)
+//    }
+//}

@@ -8,21 +8,23 @@
 import SwiftUI
 
 struct StatisticsView: View {
-    @Environment(\.presentationMode) var presentationMode
-   
+//    @Environment(\.presentationMode) var presentationMode
+    @Environment(\.dismiss) private var dismiss
+
     // 현재 연도 및 월 가져오기
     private var currentYear: String {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy년"
         return dateFormatter.string(from: Date())
     }
-    
+     
     private var currentMonth: String {
         let dateFormatter = DateFormatter()
+        dateFormatter.locale = Locale(identifier: "ko_KR")
         dateFormatter.dateFormat = "M월"
         return dateFormatter.string(from: Date())
     }
-    
+
     // 받아올 더미 데이터
     private var recordCount: Int = 10
     private var shame: String = "dummy"
@@ -32,8 +34,16 @@ struct StatisticsView: View {
             VStack(alignment: .leading) {
                 // 상단 네비게이션 영역
                 HStack {
+//                    Button(action: {
+//                        presentationMode.wrappedValue.dismiss() // 이전 화면으로 돌아가기
+//                    }) {
+//                        Image("backbutton")
+//                            .resizable()
+//                            .scaledToFit()
+//                            .frame(width: 24, height: 24)
+//                    }
                     Button(action: {
-                        presentationMode.wrappedValue.dismiss() // 이전 화면으로 돌아가기
+                        dismiss() // 이전 화면으로 돌아가기
                     }) {
                         Image("backbutton")
                             .resizable()
@@ -163,7 +173,6 @@ struct StatisticsView: View {
                             .padding(.leading, 24)
                             .padding(.bottom, 40)
                         
-                        RoundedRectangle(cornerSize: 10)
                         Text("부족한 부분을 점검하고 효율적인 공부 방법을 찾아보세요!")
                             .font(.system(size: 15, weight: .medium))
                             .padding(.leading, 24)
