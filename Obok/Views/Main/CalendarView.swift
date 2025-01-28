@@ -15,7 +15,7 @@ struct CalendarView: View {
     @State private var navigateToStatistics: Bool = false
 
     var body: some View {
-        NavigationView {
+        NavigationStack {
             VStack(spacing: 16) {
                 // 상단 설정, 통계, 모아보기 버튼
                 HStack {
@@ -196,7 +196,7 @@ struct CalendarView: View {
     private var currentMonthYear: String {
         let formatter = DateFormatter()
         formatter.locale = Locale(identifier: "ko_KR")
-        formatter.dateFormat = "LLLL"
+//        formatter.FFormat = "LLLL"
         return formatter.string(from: selectedDate)
     }
 
@@ -240,10 +240,3 @@ struct CalendarView: View {
     }
 }
 
-//struct CalendarView_Previews: PreviewProvider {
-//    @State static var previewDate = Date()
-//
-//    static var previews: some View {
-//        CalendarView(selectedDate: $previewDate)
-//    }
-//}
