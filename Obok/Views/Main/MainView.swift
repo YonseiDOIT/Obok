@@ -7,6 +7,8 @@
 
 // 주차별 달력과 오늘 일기 목록 표시
 
+// err fault; main / calendar -> main + calendar
+
 import SwiftUI
 
 struct MainView: View {
