@@ -35,18 +35,11 @@ struct CalendarView: View {
                     Spacer()
 
                     HStack(spacing: 16) {
-                        NavigationLink(
-                            destination: StatisticsView()
-//                            isActive: $navigateToStatistics
-                        ) {
-                            Button(action: {
-                                navigateToStatistics = true // 통계 화면으로 이동
-                            }) {
-                                Image("statistics")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 75, height: 24)
-                            }
+                        NavigationLink(destination: StatisticsView()) {
+                            Image("statistics")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 75, height: 24)
                         }
 
                         Button(action: {

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct StatisticsView: View {
-//    @Environment(\.presentationMode) var presentationMode
+    @Environment(\.presentationMode) var presentationMode
     @Environment(\.dismiss) private var dismiss
 
     // 현재 연도 및 월 가져오기
@@ -34,14 +34,14 @@ struct StatisticsView: View {
             VStack(alignment: .leading) {
                 // 상단 네비게이션 영역
                 HStack {
-//                    Button(action: {
-//                        presentationMode.wrappedValue.dismiss() // 이전 화면으로 돌아가기
-//                    }) {
-//                        Image("backbutton")
-//                            .resizable()
-//                            .scaledToFit()
-//                            .frame(width: 24, height: 24)
-//                    }
+                    Button(action: {
+                        presentationMode.wrappedValue.dismiss() // 이전 화면으로 돌아가기
+                    }) {
+                        Image("backbutton")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 24, height: 24)
+                    }
                     Button(action: {
                         dismiss() // 이전 화면으로 돌아가기
                     }) {
