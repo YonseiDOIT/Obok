@@ -5,6 +5,8 @@
 //  Created by 김민경 on 11/24/24.
 //
 
+// err - memory / no cal (sending event)
+
 import SwiftUI
 
 struct CalendarView: View {
